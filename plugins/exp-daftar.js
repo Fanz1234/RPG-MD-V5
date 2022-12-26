@@ -81,7 +81,6 @@ const listMessage = {
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ:
 `
   let buttonMessage= {
 'document':{'url':'https://youtu.be/'},
