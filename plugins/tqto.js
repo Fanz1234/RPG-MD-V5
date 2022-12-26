@@ -12,7 +12,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 let cap = `*BIG THANKS TO*
     
 Terutama Terimakasih Teruntuk:
-➸ @${'6288279268363'.split('@')[0]}
+➸ @${'6285812373011'.split('@')[0]}
 
 Terimakasih Juga Untuk Kang Banned:
 ➸ 0@s.whatsapp.net
@@ -24,7 +24,7 @@ Terimakasih Juga Untuk Kang Banned:
 • Nurutomo
 • Adiwajshing
 • Ariffb
-• Amel
+• Fanz
 • IrwanX
 • Dawnfrosty
 • Rteam1
@@ -58,22 +58,22 @@ Terimakasih Juga Untuk Kang Banned:
 • Orang-orang yang Berdonasi
 ─────────────────────`
   let buttonMessage= {
-'document':{'url':'https://youtu.be/hklv-Ysqqac'},
+'document':{'url':'https://youtu.be/'},
 'mimetype':global.ddocx,
-'fileName':'「 ᴹᴿ᭄ King Of Bear ×፝֟͜× 」',
+'fileName':'「 ᴹᴿ᭄ Fanz ×፝֟͜× 」',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
 'forwardingScore':555,
 'isForwarded':true,
 'externalAdReply':{
-'mediaUrl':'https://youtu.be/hklv-Ysqqac',
+'mediaUrl':'https://youtu.be/',
 'mediaType':2,
 'previewType':'pdf',
 'title':`💌 Ultah Owner: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-'body':`⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
-'thumbnail':await(await fetch('https://telegra.ph/file/6ab4daac226292a112540.jpg')).buffer(),
-'sourceUrl':'https://youtu.be/hklv-Ysqqac'}},
+'body':`⚘ by ᴹᴿ᭄ Fanz ×፝֟͜×`,
+'thumbnail':await(await fetch('https://telegra.ph/file/e83ba3c272120b6b3ed05.jpg')).buffer(),
+'sourceUrl':'https://youtu.be/'}},
 'caption':cap,
 'footer':`Ini Ucapan Terima Kasih Untuk Orang Yang Telah Berpatisipasi
 
