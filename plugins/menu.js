@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
-    let url = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
+    let url = 'https://telegra.ph/file/e83ba3c272120b6b3ed05.jpg'
     let flaa = pickRandom(global.flaaaaa)
     const ultah = new Date(`${ultahowner} 00:00:01`)
     const sekarat = new Date().getTime() 
@@ -186,20 +186,20 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 `, text.trim(), flaa, [
       [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
       [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
-    ], m, { 'document':{'url':'https://youtu.be/hklv-Ysqqac'},
+    ], m, { 'document':{'url':'https://youtu.be/'},
 'mimetype':global.dpdf,
-'fileName':'「 ᴹᴿ᭄ King Of Bear ×፝֟͜× 」',
+'fileName':'「 ᴹᴿ᭄ Fanz ×፝֟͜× 」',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'previewType':'pdf',
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtu.be/hklv-Ysqqac',
+                        sourceUrl: 'https://youtu.be/',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ Fanz ×፝֟͜×`,
                         title: `💌 My Ultah: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        body: `⚘ by ᴹᴿ᭄ Fanz ×፝֟͜×`,          previewType: 0,
                         thumbnail: await (await fetch(thumb)).buffer(),
-                        mediaUrl: 'https://youtu.be/hklv-Ysqqac'
+                        mediaUrl: 'https://youtu.be/'
                         
                       }}
 })
