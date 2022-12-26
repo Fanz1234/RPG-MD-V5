@@ -1,11 +1,11 @@
 /**
  * Jangan Di Hapus!!
  * 
- * Buatan @FokusDotId
- * Youtubeku: https://youtu.be/pwLZpdfO8AU
+ * Buatan @Fanz
+ * Youtubeku: https://youtu.be/
  * 
  * Ingin bikin fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
+ * hubungi: https://wa.me/6285812373011
  * 
  */
 
