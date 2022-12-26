@@ -1,75 +1,45 @@
 import fetch from 'node-fetch'
-import { createHash } from 'crypto'
-const delay = time => new Promise(res => setTimeout(res, time))
-let handler = async(m, { conn, text, usedPrefix, command }) => {
-	conn.p = conn.p ? conn.p : {}
-	let id = m.chat
-	const ftroli = {
-    key : {
-    remoteJid: 'status@broadcast',
-    participant : '0@s.whatsapp.net'
-    },
-    message: {
-    orderMessage: {
-    itemCount : 999999,
-    status: 404,
-    surface : 404,
-    message: `Nih My Mastah :3`, 
-    orderTitle: ``,
-    thumbnail: await conn.resize(await (await fetch('https://telegra.ph/file/e83ba3c272120b6b3ed05.jpg')).buffer(), 300, 200) //Gambarnye
-
-    }
-    }
-    }
-    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-    let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
-	conn.p[id] = [
-	await conn.sendContact(m.chat, kontak2, ftroli, { contextInfo: { externalAdReply :{ 
-     showAdAttribution: true, 
-      }} 
-   })
-	]
-	await delay(100)
-  const ultah = new Date(`${ultahowner} 00:00:01`)
+import fs from 'fs';
+import crypto from 'crypto'
+let handler = async (m, { conn, text, usedPrefix }) => {
+    const ultah = new Date('November 4 2022 23:59:59')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
     const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
     const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
-let cap = `Hay kak @${await m.sender.split('@')[0]}, itu nomor ownerku jangan dispam yah ^_^` 
-  let buttonMessage= {
-'document':{'url':'https://youtu.be/'},
-'mimetype':global.ddocx,
-'fileName':'「 ᴹᴿ᭄ Fanz ×፝֟͜× 」',
-'fileLength':fsizedoc,
-'pageCount':fpagedoc,
-'contextInfo':{
-'forwardingScore':555,
-'isForwarded':true,
-'externalAdReply':{
-'mediaUrl':'https://youtu.be/',
-'mediaType':2,
-'previewType':'pdf',
-'title':`💌 Ultah Owner: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-'body':`⚘ by ᴹᴿ᭄ Fanz ×፝֟͜×`,
-'thumbnail': await(await fetch(thumb)).buffer(),
-'sourceUrl':'https://youtu.be/'}},
-'caption':cap,
-'footer':`Itu Owner Ku Yah Kak Jangan Sungkem Untuk Chat ;3
+    let sewa = `
+         〔 llı OWNER ${namebot} ıll 〕
+    
+Nama: ${nameowner}
+Umur: ${umurowner}
+Asal: ${asalowner}
+Status: ${pacarowner}
 
-${botdate}`,
-'buttons':[
-{'buttonId':'.tqto','buttonText':{'displayText':'Credits'},'type':1}
-],
-'headerType':6}
-    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
-  await delay(100)
-  return delete conn.p[id]
+Nomor: ${nomorowner}
+
+${botdate}
+`
+        let img1 = fs.readFileSync('./thumbnail.jpg');
+        let img2 = fs.readFileSync('./media/bawah.png');
+    return conn.sendButton(m.chat, hiasan, sewa, await (await fetch(`https://telegra.ph/file/e83ba3c272120b6b3ed05.jpg`)).buffer(), [["Menu", usedPrefix + "menu"], ["Sewa Bot", usedPrefix + "sewa"]], m, {
+        contextInfo: {
+            externalAdReply: {
+                mediaUrl: '',
+                        mediaType: 2,
+                        description: 'anu',
+                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
+                        body: `-`,                                       previewType: 0,
+                        thumbnail: await (await fetch(`https://telegra.ph/file/eeb0490126df245045890.jpg`)).buffer(),
+                        sourceUrl: 'https://youtu.be/'
+            }
+        }
+    })
 }
-
 handler.help = ['owner']
-handler.tags = ['info']
+handler.tags = ['Bot']
+
 handler.command = /^(owner|creator)$/i
 
 export default handler
