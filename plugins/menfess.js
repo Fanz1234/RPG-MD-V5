@@ -45,7 +45,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.tags = ['menfess']
 handler.help = ['menfess'].map(v => v + ' <nomor|nama|pesan>')
-handler.command = /^(confess|conpes|menfes|confes|menpes|menfess)$/i
+handler.command = /^(mfs|confess|conpes|menfes|confes|menpes|menfess)$/i
 handler.private = true
 
 export default handler
