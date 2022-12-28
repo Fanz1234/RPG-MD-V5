@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ┃ _24jam tanpa kendala_
 ┗━━━━ꕥ
 `.trim(), wm, [['Owner',`/owner`]],m) // Tambah sendiri kalo mau
-conn.sendFile(m.chat, vn, 'haori.mp3', null, m, true, {
+conn.sendFile(m.chat, null, m, true, {
 type: 'audioMessage', 
 ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`, body: `-`, sourceUrl: '-', thumbnail: await (await fetch('https://telegra.ph/file/e83ba3c272120b6b3ed05.jpg')).buffer(),}} 
      }) 
